@@ -1,0 +1,17 @@
+{
+  "name": "starbug/standard",
+  "description": "Starbug coding standard and testing tools.",
+  "config": {
+    "platform": {
+      "php": "7.0"
+    }
+  },
+  "require-dev": {
+    "phpunit/dbunit": "2.*",
+    "sebastian/phpcpd": "*",
+    "phploc/phploc": "*",
+    "phpmd/phpmd":"*",
+    "squizlabs/php_codesniffer": "2.*",
+    "phpunit/phpunit": "^5.7"
+  }
+}

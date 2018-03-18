@@ -1,0 +1,19 @@
+language: php
+
+php:
+  - 7.0
+  - 7.1
+  - 7.2
+  - hhvm
+
+before_install:
+  - sudo apt-get update -qq
+  - composer self-update
+
+install:
+  - composer install
+
+script: vendor/bin/phpunit
+
+notifications:
+  email: false
