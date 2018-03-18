@@ -1,0 +1,4 @@
+{
+  "phpcs.enable": true,
+  "phpcs.standard": "vendor/starbug/standard/phpcs.xml"
+}
