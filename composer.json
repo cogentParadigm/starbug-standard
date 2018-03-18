@@ -6,7 +6,7 @@
       "php": "7.0"
     }
   },
-  "require-dev": {
+  "require": {
     "phpunit/dbunit": "2.*",
     "sebastian/phpcpd": "*",
     "phploc/phploc": "*",
