@@ -3,7 +3,7 @@
   "description": "Starbug coding standard and testing tools.",
   "config": {
     "platform": {
-      "php": "7.0"
+      "php": "7.1"
     }
   },
   "require": {

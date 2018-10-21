@@ -1,4 +1,8 @@
 {
   "phpcs.enable": true,
-  "phpcs.standard": "vendor/starbug/standard/phpcs.xml"
+  "phpcs.executablePath": "vendor/bin/phpcs",
+  "phpcs.standard": "vendor/starbug/standard/phpcs.xml",
+  "phpmd.enabled": true,
+  "phpmd.command": "vendor/bin/phpmd",
+  "phpmd.rules": "vendor/starbug/standard/phpmd.xml"
 }

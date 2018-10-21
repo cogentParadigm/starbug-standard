@@ -1,5 +1,6 @@
 <ruleset name="starbug-project-coding-standard">
     <description>Starbug Project Coding Standard</description>
+    <arg name="tab-width" value="2"/>
 
     <!-- USE PSR2 as a baseline -->
     <rule ref="PSR2">
@@ -23,6 +24,18 @@
       <exclude name="PSR2.Methods.FunctionCallSignature.ContentAfterOpenBracket"/>
     </rule>
 
+    <rule ref="PSR2.ControlStructures.SwitchDeclaration">
+      <properties>
+        <property name="indent" value="2"/>
+      </properties>
+    </rule>
+
+    <rule ref="Squiz.Functions.MultiLineFunctionDeclaration">
+      <properties>
+        <property name="indent" value="2"/>
+      </properties>
+    </rule>
+
     <!-- PSR2 DEVIATIONS (2 space tab width, and opening braces) -->
     <!-- This enforces opening brace on same line -->
     <rule ref="Generic.Classes.OpeningBraceSameLine"/>
@@ -42,15 +55,21 @@
     <rule ref="Generic.PHP.DeprecatedFunctions"/>
     <!-- Commenting -->
     <rule ref="Generic.Commenting"/>
-    <rule ref="Squiz.Commenting.BlockComment"/>
-    <rule ref="Squiz.Commenting.ClassComment"/>
+    <!--<rule ref="Squiz.Commenting.BlockComment"/>-->
+    <!--<rule ref="Squiz.Commenting.ClassComment"/>-->
     <rule ref="Squiz.Commenting.DocCommentAlignment"/>
     <rule ref="Squiz.Commenting.EmptyCatchComment"/>
+    <!--
     <rule ref="Squiz.Commenting.FunctionComment">
       <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamType"/>
       <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamName"/>
     </rule>
+    -->
     <rule ref="Squiz.Commenting.FunctionCommentThrowTag"/>
-    <rule ref="Squiz.Commenting.InlineComment"/>
+    <rule ref="Squiz.Commenting.InlineComment">
+      <exclude name="Squiz.Commenting.InlineComment.NotCapital"/>
+      <exclude name="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+      <exclude name="Squiz.Commenting.InlineComment.SpacingAfter"/>
+    </rule>
 
 </ruleset>
