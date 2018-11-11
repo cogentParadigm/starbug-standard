@@ -1,24 +1,10 @@
 {
   "name": "starbug/standard",
-  "description": "Starbug coding standard and testing tools.",
-  "config": {
-    "platform": {
-      "php": "7.1"
-    }
-  },
+  "description": "Starbug coding standard configurations and validation tools.",
   "require": {
-    "phpunit/dbunit": "*",
-    "sebastian/phpcpd": "*",
-    "phploc/phploc": "*",
-    "phpmd/phpmd":"*",
     "squizlabs/php_codesniffer": "*",
-    "phpunit/phpunit": "*",
-    "phpspec/phpspec": "*",
-    "leanphp/phpspec-code-coverage": "*",
-    "behat/behat": "*",
-    "behat/mink": "*",
-    "behat/mink-goutte-driver": "*",
-    "behat/mink-selenium2-driver": "*",
-    "behat/mink-extension": "*"
+    "phpmd/phpmd":"*",
+    "sebastian/phpcpd": "*",
+    "phploc/phploc": "*"
   }
 }
