@@ -21,7 +21,7 @@
   </rule>
   <rule ref="rulesets/naming.xml/ShortVariable">
     <properties>
-      <property name="exceptions" value="id,evt,db,sb,e,pdo,idx,js,up,to,x,y,i,j"/>
+      <property name="exceptions" value="id,evt,db,sb,e,pdo,idx,js,up,to,x,y,i,j,_"/>
     </properties>
   </rule>
   <rule ref="rulesets/naming.xml/ShortMethodName">
@@ -36,6 +36,7 @@
   <rule ref="rulesets/unusedcode.xml/UnusedLocalVariable">
     <properties>
       <property name="allow-unused-foreach-variables" value="true"/>
+      <property name="exceptions" value="_"/>
     </properties>
   </rule>
 </ruleset>
